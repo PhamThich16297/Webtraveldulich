@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Boostrap 3-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Lobster&display=swap"
+        rel="stylesheet">
+    <!--CSS external-->
+    <link rel="stylesheet" href="trangchu.css">
+    <title>Cù Lao Chàm</title>
+</head>
+
+<body style="background-color: #fdf2f8;">
+    <nav class="navbar-fixed-top">
+        <!-- Navbar Header Logo + User-->
+        <nav class="navbar navbar-default" style="margin: 0px;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myUser">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html"><img class="img-logo" src="images/logo.jpg" alt="logo"></a>
+                    <a class="text-logo" href="index.html">Du Lịch Quảng Nam</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myUser">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a style="font-size: 18px; color: tomato;" href="signin.html"><span
+                                    class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a style="font-size: 18px; color: tomato;" href="login.html"><span
+                                    class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ---------------------------OK--------------------- -->
+
+        <!-- Navbar Header Menu + Search-->
+        <nav class="navbar navbar-default navbar-menu">
+            <div class="container">
+                <div class="navbar-header icon-menu">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <form class="navbar-form navbar-right form-menu" action="#">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="collapse navbar-collapse text-li" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Giới Thiệu</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Du Lịch <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu text-dropdown">
+                                <li><a href="dulichbien.html">Du Lịch Biển</a></li>
+                                <li><a href="dulichthangcanh.html">Du Lịch Thắng Cảnh</a></li>
+                                <li><a href="#">Di Tích</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Văn Hóa <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu text-dropdown">
+                                <li><a href="#">Ẩm Thực</a></li>
+                                <li><a href="#">Lễ Hội</a></li>
+                                <li><a href="#">Làng Nghề Cổ Truyền</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mua Sắm</a></li>
+                        <li><a href="#">Giải Trí</a></li>
+                        <li><a href="#">Tour</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <!-- -------------------------------OK-------------------------- -->
+
+    <!--Img Banner-->
+    <div id="myCarousel" class="container carousel slide" data-ride="carousel" style="margin-top: 100px;">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/culaocham2.png" alt="Hoa Ngô Đồng" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="images/culaocham4.png" alt="Hàng Dừa Xanh" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="images/bannerdlbien.jpg" alt="Cù Lao Chàm" style="width:100%;">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="margin-left: 15px;">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next" style="margin-right: 15px;">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- -------------------------------OK-------------------------- -->
+
+    <!--Main-->
+    <div class="body-main">
+        <div class="container">
+            <div class="row">
+                <div class="likeshare">
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-thumbs-up"></span>
+                        Like 234</button>
+                    <button type="button" class="btn btn-primary">Share</button>
+                </div>
+                <!--Left-col-->
+                <div class="body-main-info col-md-8 col-sm-12">
+                    <h3>Du lịch Cù Lao Chàm- Trọn bộ chi tiết</h3>
+                    <p>Cù Lao Chàm là nơi bảo tồn hơn 950 loài thủy sinh, được UNESCO công nhận là khu dự trữ sinh quyển
+                        thế giới. Nơi đây hoang sơ và có hệ sinh thái phong phú, là một trong những địa điểm du lịch
+                        được du khách yêu mến. Không chỉ thế, địa điểm du lịch này có vẻ đẹp tựa như truyện cổ tích, để
+                        đi hết và khám phá vùng đất này hẳn bạn sẽ cần rất nhiều thời gian, nên hôm nay Traveloka sẽ gửi
+                        đến bạn trọn bộ chi tiết những kinh nghiệm du lịch Cù Lao Chàm đầy đủ nhất và mới nhất.</p>
+
+                    <h4>Vị trí khu du lịch Cù Lao Chàm</h4>
+                    <p>Cù Lao Chàm là cụm đảo tọa lạc tại xã Tân Hiệp, thành phố Hội An, tỉnh Quảng Nam. Trong cụm đảo
+                        này bao gồm 1 hòn đảo chính và 8 hòn đảo nhỏ bao quanh, nhìn từ xa hòn đảo này sẽ như một cánh
+                        cung khổng lồ.
+                    </p>
+                    <p>Giống với phố cổ Hội An, Cù Lao Chàm đến ngày nay vẫn giữ vẹn nguyên vẻ đẹp vốn có ban đầu - vẻ
+                        hoang sơ mộc mạc và yên bình. Đặt chân đến đây bạn sẽ đặt chấn đến một thiên đường biển cả xanh
+                        ngát có không khí trong lành. Nếu bạn đang tìm một nơi nghỉ dưỡng để tạm trốn cái ồn ào của phố
+                        thị thì dy lịch Cù Lao Chàm là sự lựa chọn hợp lý đấy.</p>
+
+                    <div class="body-main-img">
+                        <img onclick="show(this)" src="images/culaocham1.png" alt="Làng Chài">
+                    </div>
+                    <h4>Cù Lao Chàm có gì đặc biệt?</h4>
+                    <p>Cù Lao Chàm được lấy lòng những du khách bằng những cảnh sắc thiên nhiên hiền hòa, bãi biển xanh
+                        ngát, những con đường ven biển đẹp đến nao lòng, nhưng công trình kiến trúc có ý nghĩa văn hóa
+                        cực kỳ to lớn. Đến với nơi đây, bạn nhất định phải ghé thăm và check-in một số cảnh đẹp sau đây,
+                        nếu không bạn sẽ tiếc hùi hụi:</p>
+                    <h5>Đoạn đường hoa ngô đồng</h5>
+                    <p>Ở Cù Lao Chàm, hoa ngô đồng nở vào độ tháng 7 đến tháng 8 hàng năm. Vào đúng thời gian này, nếu
+                        bạn đi dọc con đường Bãi Xếp, Bãi Làng, Bãi Hương, bạn sẽ thấy một cánh đồng phủ đầy màu đỏ của
+                        hoa ngô nở rộ. Một bên là núi, một bên là biển, cánh đồng hoa ngô nhỏ bé nằm trong lòng biển và
+                        núi an tâm nở rộ và tỏa sắc mặc kệ mưa bão.</p>
+                    <p>Khung cảnh của con đường hoa ngô đẹp tựa một bức họa do biển xanh, mây trời và những vách núi tạo
+                        nên. Nếu có dịp du lịch Cù Lao Chàm, bạn đừng quên check-in tại con đường xinh đẹp này, đảm bảo
+                        cảnh vật nơi đây sẽ khiến cho những bức ảnh của bạn ấn tượng hơn nhiều lần.</p>
+                    <div class="body-main-img">
+                        <img onclick="show(this)" src="images/culaocham2.png" alt="Hoa Ngô Đồng">
+                    </div>
+                    <h4>Eo gió Cù Lao Chàm</h4>
+                    <p>Eo gió là bờ đá ở phía sau lưng dãy núi. Eo gió nằm cách Bãi Làng khoảng 3km, tọa lạc tại phía
+                        Đông của Cù Lao Chàm. Đây là một trong những địa điểm đón bình minh và hoàng hôn cực đẹp tại hòn
+                        đảo này.</p>
+                    <p>Từ eo gió ngắm nhìn ra phía xa xăm, bạn sẽ thấy được khung cảnh bao la của biển Đông rộng lớn và
+                        đường chân trời ngăn cách giữa biển và trời.</p>
+                    <div class="body-main-img">
+                        <img onclick="show(this)" src="images/culaocham3.png" alt="Biển Và Núi">
+                    </div>
+                    <h4>Hàng dừa xanh Bãi Ông</h4>
+                    <p>Bãi Ông là một trong những bãi tắm đẹp nhất ở Cù Lao Chàm. Tổng thể Bãi Ông có hình dạng trăng
+                        lưỡi liềm cong vòng, nếu nhìn từ trên cao, bạn sẽ thấy Bãi Ông như một nửa vòng tròn ôm trọn lấy
+                        bãi biển xanh mát.</p>
+                    <p>Không chỉ là bãi tắm, Bãi Ông còn nổi tiếng với hàng dừa ảo diệu, nhưng cây dừa sừng sững đứng
+                        xếp hàng dọc theo bờ biển. Bạn có thể đến hàng dừa Bãi Ông kết hợp thêm chiếc ghế nghỉ và một
+                        cốc nước giải nhiệt, chắc chắn bạn sẽ một album ảnh tuyệt vời cho kì nghỉ hè đáng nhớ.</p>
+                    <div class="body-main-img">
+                        <img onclick="show(this)" src="images/culaocham4.png" alt="Hàng Dừa Xanh">
+                    </div>
+                    <h4>Du lịch Cù Lao Chàm di chuyển như thế nào?</h4>
+                    <p>Nếu đi tự túc bạn có 2 cách để di chuyển ra Cù Lao Chàm:</p>
+                    <ul>
+                        <li>
+                            <b>Đi bằng tàu gỗ:</b> Tàu gỗ có ưu điểm là có thể chở được nhiều người ra Cù Lao Chàm (có
+                            thể chở
+                            cả xe máy), nhưng nhược điểm là đi khá lâu - khoảng 3 tiếng và mỗi ngày chỉ có 1 chuyến ra
+                            và 1 chuyến vào. Bạn có thể bắt tàu gỗ ở bến Hội An vào lúc 7h30 sáng hoặc ở bến Cửa Đại vào
+                            lúc 8h30 sáng.
+                        </li>
+                        <li><b>Đi bằng Cano:</b> bạn sẽ mất khoảng 15 phút để đến được Cù Lao Chàm, bạn nên ra bến
+                            khoảng 8h00
+                            - 9h00 để dễ dàng bắt được cano hơn, nếu bạn ra muộn bạn có thể sẽ phải ra về vì ít du khách
+                            đi và khó ghép đoàn.</li>
+                    </ul>
+                    <div class="body-main-img">
+                        <img onclick="show(this)" src="images/culaocham5.png" alt="Ca-Nô">
+                    </div>
+                    <p>Thời gian đẹp nhất để du lịch Cù Lao Chàm là từ tháng 5 đến tháng 8 hàng năm, Thời gian này thời
+                        tiết không có mưa gió hay nắng gắt, không khí mát mẻ.</p>
+
+                    <p>Nhưng, thời điểm du lịch Cù Lao Chàm được hưởng nhiều chương trình ưu đãi nhất lại là tháng 2 -
+                        tháng 4 và tháng 8- tháng 10. Mùa này chưa phải là mùa du lịch của nơi đây, nên có rất nhiều
+                        chương trình thu hút du khách.</p>
+                    <h2>CHÚC BẠN CÓ CHUYẾN ĐI VUI VẺ</h2>
+                </div>
+
+                <!--Right-Col-->
+                <div class="col-md-4 col-sm-12 body-main-sticky">
+                    <div class="body-main-moreinfo" style="margin-bottom: 5px;">
+                        <h4>Bài Viết Dành Cho Bạn</h4>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top51.jpg" alt="Du Lịch Quảng Nam" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 điểm đến du lịch Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 01/05/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top52.jpg" alt="Mì Quảng" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 món ăn đặc sản Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 16/02/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top53.jpg" alt="Lễ Hội Bà Thu Bồn" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 Lễ Hội nổi bật ở Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 09/07/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top54.jpg" alt="Đèn Lồng" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 Làng nghề Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 16/09/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top55.jpg" alt="Vinpearl Land Hội An" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 Khu vui chơi Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 02/07/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-main-moreinfo">
+                        <h3 style="color:red; font-weight: bold;text-align: center;">LIÊN HỆ QUẢNG CÁO</h3>
+                        <div style="text-align: center;"><a href="#" class="btn btn-info btn-lg">
+                                <span class="glyphicon glyphicon-phone-alt"></span> 0909357579
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="showBoard" style="display: none;">
+        <div id="maskContainer" onclick="hide()"></div>
+        <div id="showContainer">
+            <img class="imageShow" src="images/banner1.jpg" alt="">
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <img src="images/logo.jpg" alt="Logo">
+            <h3>Liên hệ</h3>
+            <p>Name: Phạm Thích</p>
+            <p>Email:thichpfx13302@funix.edu.vn</p>
+        </div>
+    </div>
+
+    <script src="trangchu.js"></script>
+</body>
+
+</html>

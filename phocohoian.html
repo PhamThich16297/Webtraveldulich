@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Boostrap 3-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Lobster&display=swap"
+        rel="stylesheet">
+    <!--CSS external-->
+    <link rel="stylesheet" href="trangchu.css">
+    <title>Phố Cổ Hội An</title>
+</head>
+
+<body style="background-color: #fdf2f8;">
+    <nav class="navbar-fixed-top">
+        <!-- Navbar Header Logo + User-->
+        <nav class="navbar navbar-default" style="margin: 0px;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myUser">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html"><img class="img-logo" src="images/logo.jpg" alt="logo"></a>
+                    <a class="text-logo" href="index.html">Du Lịch Quảng Nam</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myUser">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a style="font-size: 18px; color: tomato;" href="signin.html"><span
+                                    class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a style="font-size: 18px; color: tomato;" href="login.html"><span
+                                    class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ---------------------------OK--------------------- -->
+
+        <!-- Navbar Header Menu + Search-->
+        <nav class="navbar navbar-default navbar-menu">
+            <div class="container">
+                <div class="navbar-header icon-menu">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <form class="navbar-form navbar-right form-menu" action="#">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="collapse navbar-collapse text-li" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Giới Thiệu</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Du Lịch <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu text-dropdown">
+                                <li><a href="dulichbien.html">Du Lịch Biển</a></li>
+                                <li><a href="dulichthangcanh.html">Du Lịch Thắng Cảnh</a></li>
+                                <li><a href="#">Di Tích</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Văn Hóa <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu text-dropdown">
+                                <li><a href="#">Ẩm Thực</a></li>
+                                <li><a href="#">Lễ Hội</a></li>
+                                <li><a href="#">Làng Nghề Cổ Truyền</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mua Sắm</a></li>
+                        <li><a href="#">Giải Trí</a></li>
+                        <li><a href="#">Tour</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <!-- -------------------------------OK-------------------------- -->
+
+    <!--Img Banner-->
+    <div id="myCarousel" class="container carousel slide" data-ride="carousel" style="margin-top: 100px;">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/bannerhoian1.jpg" alt="" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="images/bannerhoinan2.png" alt="" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="images/bannerhoian3.jpg" alt="" style="width:100%;">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="margin-left: 15px;">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next" style="margin-right: 15px;">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- -------------------------------OK-------------------------- -->
+
+    <!--Main-->
+    <div class="body-main">
+        <div class="container">
+            <div class="row">
+                <div class="likeshare">
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-thumbs-up"></span>
+                        Like 234</button>
+                    <button type="button" class="btn btn-primary">Share</button>
+                </div>
+                <!--Left-col-->
+                <div class="body-main-info col-md-8 col-sm-12">
+                    <p>Nằm bên bờ bắc hạ lưu sông Thu Bồn, Hội An là một đô thị cổ tại Quảng Nam, cách thành phố Đà Nẵng
+                        hơn 30 km, cách Huế 122 km. Nhắc tới Hội An là phải kể tới các dãy nhà cổ màu vàng nghệ, dòng
+                        sông lung linh hoa đăng khi đêm xuống, hay những món ăn ngon giá bình dân.</p>
+                    <h4>Hội An mùa nào đẹp?</h4>
+                    <p>Khí hậu Hội An đan xen khí hậu giữa miền Nam và miền Bắc, rõ rệt mùa mưa và mùa khô. Mỗi mùa
+                        phố cổ lại có những nét đẹp riêng.Ba tháng đầu năm là thời gian lý tưởng nhất để rong chơi tại
+                        Hội An khi nắng không quá gắt,
+                        trời mát mẻ, thi thoảng có mưa nhỏ. Từ tháng 4 đến tháng 6 là giai đoạn gay gắt của mùa khô,
+                        nhưng thời tiết Hội An khá dễ chịu,
+                        do nằm ở phía nam dãy Trường Sơn. Đây cũng là mùa cao điểm du lịch.</p>
+
+                    <div style="overflow: auto;">
+                        <div style="float: right">
+                            <img onclick="show(this)" style="width: 400px; margin: 10px;" src="images/hoian1.jpg" alt="">
+                        </div>
+                        <p>Mùa mưa, không ít khách du lịch vẫn tìm đến Hội An để có những trải nghiệm khác lạ.
+                            Tháng 7 vẫn đang là mùa khô. Sang tháng 8 và 9 là thời điểm giao mùa. Trời vẫn nắng nhẹ, bắt
+                            đầu có mưa lác đác và se lạnh về đêm. Ba tháng cuối năm là mùa mưa ở Hội An, trời ít khi
+                            nắng, mưa nặng hạt và đôi khi có lũ lụt.
+                            Những du khách từ miền Nam đến Hội An mùa lạnh nên chuẩn bị trang phục phù hợp, tránh để sức
+                            khỏe bị ảnh hưởng.
+                        </p>
+                    </div>
+                    <h4>Di chuyển</h4>
+                    <p>Các hãng hàng không Vietnam Airlines, Vietjet Air, Bamboo Airlines... đều khai thác đường bay tới
+                        Đà Nẵng. Giá vé khứ hồi cho một người từ Hà Nội hoặc TP HCM đến Đà Nẵng trung bình khoảng 1,5
+                        triệu đồng. Bạn nên mua vé sớm để có giá tốt và giờ khởi hành thuận tiện.<br>
+
+                        Đến sân bay Đà Nẵng, bạn có thể chọn đi xe khách trung chuyển từ sân bay, hoặc đi bus, taxi, ôtô
+                        riêng để tới trung tâm Hội An. Những người thích tự do đi lại có thể thuê xe máy từ TP Đà Nẵng
+                        để vui chơi ở Hội An, với giá khoảng 150.000 đồng một ngày.<br>
+
+                        Nếu đi xe bus bạn bắt tuyến số 01 Đà Nẵng - Hội An chạy từ 5h30 đến 17h50 hàng ngày với giá vé
+                        20.000 đồng mỗi người. Nếu đi ba người trở lên và muốn di chuyển nhanh gọn từ sân bay thẳng tới
+                        Hội An, bạn nên gọi taxi, xe khách trung chuyển với giá từ 250.000 đồng một chuyến.<br>
+
+                        Để di chuyển ở Hội An bạn có thể sử dụng xe đạp, xe máy thuê từ chính các khách sạn, homestay
+                        mình ở. Xe đạp giá thuê khoảng 30.000 đồng một ngày, xe máy là 120.000 đồng.Các hãng hàng không
+                        Vietnam Airlines, Vietjet Air, Bamboo Airlines... đều khai thác đường bay tới Đà Nẵng. Giá vé
+                        khứ hồi cho một người từ Hà Nội hoặc TP HCM đến Đà Nẵng trung bình khoảng 1,5 triệu đồng. Bạn
+                        nên mua vé sớm để có giá tốt và giờ khởi hành thuận tiện.<br>
+
+                        Đến sân bay Đà Nẵng, bạn có thể chọn đi xe khách trung chuyển từ sân bay, hoặc đi bus, taxi, ôtô
+                        riêng để tới trung tâm Hội An. Những người thích tự do đi lại có thể thuê xe máy từ TP Đà Nẵng
+                        để vui chơi ở Hội An, với giá khoảng 150.000 đồng một ngày.<br>
+
+                        Nếu đi xe bus bạn bắt tuyến số 01 Đà Nẵng - Hội An chạy từ 5h30 đến 17h50 hàng ngày với giá vé
+                        20.000 đồng mỗi người. Nếu đi ba người trở lên và muốn di chuyển nhanh gọn từ sân bay thẳng tới
+                        Hội An, bạn nên gọi taxi, xe khách trung chuyển với giá từ 250.000 đồng một chuyến.<br>
+
+                        Để di chuyển ở Hội An bạn có thể sử dụng xe đạp, xe máy thuê từ chính các khách sạn, homestay
+                        mình ở. Xe đạp giá thuê khoảng 30.000 đồng một ngày, xe máy là 120.000 đồng.<br>
+                    </p>
+                    <h4>Khách sạn, homestay</h4>
+                    <p>Hội An mỗi mùa có một vẻ đẹp riêng, nhưng thu hút đông khách nhất vẫn là dịp hè. Do đó nếu đi mùa
+                        này bạn nên tìm hiểu nơi ở để đặt phòng càng sớm càng có giá tốt, đặc biệt là những ngày cuối
+                        tuần<br>
+
+                        Giá khách sạn, resort 4 hoặc 5 sao ở đây vào khoảng 2.500.000 đồng trở lên cho một đêm phòng hai
+                        người. Hội An ngày càng có nhiều khu resort mới với vị trí đẹp như ở phường Cẩm Châu, ven biển
+                        An Bàng, Cửa Đại...<br>
+
+                        Homestay ở Hội An cũng mọc lên nhanh chóng những năm gần đây, có thể phục vụ mọi đối tượng từ
+                        khách đi một mình, theo nhóm hay gia đình. Không chỉ là một nơi sạch sẽ để ngủ, các homestay đều
+                        được chăm chút với kiến trúc, nội thất độc đáo, vườn cây xinh xắn, phòng rộng và thoáng. Giá các
+                        homestay Hội An rất rẻ, không dao động nhiều dù vào mùa cao điểm, từ 200.000 đồng một đêm cho
+                        một người.<br>
+
+                        Một số homestay đẹp được các bạn trẻ truyền tai nhau là Maison de Tau, Under The Coconut Tree,
+                        An Bàng Beach Hideaway, Heron House, Le Bleu...</p>
+                    <div class="body-main-img">
+                        <img onclick="show(this)" src="images/hoian2.jpg">
+                    </div>
+                    <h4>Chơi đâu?</h4>
+                    <p>Chỉ riêng khu phố cổ Hội An cũng là một nơi đi mỏi chân cũng không hết điểm check-in cho các bạn
+                        trẻ. Mỗi con đường, góc phố cổ kính, dãy nhà quét ve vàng nghệ lại là một điểm dừng chân chụp
+                        ảnh thú vị, tìm hiểu văn hóa địa phương...<br>
+
+                        Với vé tham quan giá 80.000 đồng cho một người giá trị trong 24h bạn có cơ hội tham quan ba
+                        trong số những điểm di tích nổi bật nhất ở phố cổ. Đó là Chùa Cầu, các hội quán Phúc Kiến, Quảng
+                        Triệu, Hải Nam, Triều Châu, các nhà cổ Quân Thắng, Đức An, Phùng Hưng, Tấn Ký... Ngoài ra vé
+                        tham quan cũng bao gồm các hoạt động nghệ thuật đường phố, trò chơi dân gian, chợ đêm... diễn ra
+                        sau 7 giờ tối.</p>
+                    <div style="overflow: auto;">
+                        <div style="float: right">
+                            <img onclick="show(this)" style="width: 350px;height: 270px; margin: 10px;" src="images/hoian3.jpg" alt="">
+                        </div>
+
+                        <img onclick="show(this)" style="width: 350px;height: 270px; margin: 10px;" src="images/hoian4.jpg" alt="">
+                    </div>
+                    <p>Bãi biển Hà My năm 2017 được báo Anh Telegraph chọn là một trong 10 bãi biển đẹp nhất châu Á. Nằm
+                        cách An Bàng 3,5 km, cách danh thắng Ngũ Hành Sơn 6 km, và cách trung tâm Hội An gần 7 km, bãi
+                        biển Hà My không quá nổi bật nhưng vẫn mang vẻ thanh bình và nét cuốn hút riêng. Tuy cách khá xa
+                        trung tâm, Hà My không thiếu homestay hay khách sạn, resort cho du khách lựa chọn.<br>
+
+                        Bãi biển Cửa Đại là một điểm đến quen thuộc của Hội An, năm 2013 đã được Tripadvisor bình chọn
+                        vào top 25 bãi biển đẹp nhất châu Á. Cửa Đại nằm cách trung tâm Hội An 5 km, là bãi tắm rộng
+                        khoảng vài chục ha với bãi cát trắng mịn, nước trong xanh, sóng nhỏ. Du khách có thể nằm hàng
+                        giờ trên cát để tắm nắng, nghe sóng vỗ rì rào, hoặc đi câu cá gần bờ, thuê thuyền đi lênh đênh
+                        cùng dân chài, hay tham gia các môn thể thao dưới nước...</p>
+
+                    <h2>CHÚC BẠN CÓ CHUYẾN ĐI VUI VẺ</h2>
+                </div>
+
+                <!--Right-Col-->
+                <div class="col-md-4 col-sm-12 body-main-sticky">
+                    <div class="body-main-moreinfo" style="margin-bottom: 5px;">
+                        <h4>Bài Viết Dành Cho Bạn</h4>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top51.jpg" alt="" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 điểm đến du lịch Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 01/05/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top52.jpg" alt="" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 món ăn đặc sản Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 16/02/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top53.jpg" alt="" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 Lễ Hội nổi bật ở Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 09/07/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top54.jpg" alt="" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 Làng nghề Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 16/09/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top55.jpg" alt="" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 Khu vui chơi Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 02/07/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-main-moreinfo">
+                        <h3 style="color:red; font-weight: bold;text-align: center;">LIÊN HỆ QUẢNG CÁO</h3>
+                        <div style="text-align: center;"><a href="#" class="btn btn-info btn-lg">
+                                <span class="glyphicon glyphicon-phone-alt"></span> 0909357579
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="showBoard" style="display: none;">
+        <div id="maskContainer" onclick="hide()"></div>
+        <div id="showContainer">
+            <img class="imageShow" src="images/banner1.jpg" alt="">
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <img src="images/logo.jpg" alt="Logo">
+            <h3>Liên hệ</h3>
+            <p>Name: Phạm Thích</p>
+            <p>Email:thichpfx13302@funix.edu.vn</p>
+        </div>
+    </div>
+
+    <script src="trangchu.js"></script>
+</body>
+
+</html>

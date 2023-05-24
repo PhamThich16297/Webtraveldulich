@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO-->
+    <meta name="keywords"
+        content="Du Lịch, Quảng Nam, Hội An, Cù Lao Chàm, Khe Lim, An Bàng, Vinpearl Land, Chùa Cầu, Lễ Hội, Làng Nghề, Mỳ Quảng, Đặc sản, Vui chơi, Giải trí, Check in, hotel">
+    <meta name="description"
+        content="Du lịch Quảng Nam, du khách sẽ được khám phá nhiều điểm đến nổi tiếng. Mỗi địa danh một vẻ đẹp riêng, mang đến cho du khách những cảm xúc thú vị. Nếu bạn là người đam mê du lịch, khám phá những vùng đất mới, đừng bỏ qua vùng đất Quảng Nam.">
+    <!--Boostrap 3-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Lobster&display=swap"
+        rel="stylesheet">
+    <!--CSS external-->
+    <link rel="stylesheet" href="trangchu.css">
+    <title>Du Lịch Quảng Nam</title>
+</head>
+
+<body style="background-color: #fdf2f8;">
+    <nav class="navbar-fixed-top">
+        <!-- Navbar Header Logo + User-->
+        <nav class="navbar navbar-default" style="margin: 0px;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myUser">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html"><img class="img-logo" src="images/logo.jpg" alt="logo"></a>
+                    <a class="text-logo" href="index.html">Du Lịch Quảng Nam</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myUser">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a style="font-size: 18px; color: tomato;" href="signin.html"><span
+                                    class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a style="font-size: 18px; color: tomato;" href="login.html"><span
+                                    class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ---------------------------OK--------------------- -->
+
+        <!-- Navbar Header Menu + Search-->
+        <nav class="navbar navbar-default navbar-menu">
+            <div class="container">
+                <div class="navbar-header icon-menu">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <form class="navbar-form navbar-right form-menu" action="#">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="collapse navbar-collapse text-li" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Giới Thiệu</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Du Lịch <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu text-dropdown">
+                                <li><a href="dulichbien.html">Du Lịch Biển</a></li>
+                                <li><a href="dulichthangcanh.html">Du Lịch Thắng Cảnh</a></li>
+                                <li><a href="#">Di Tích</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Văn Hóa <span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu text-dropdown">
+                                <li><a href="#">Ẩm Thực</a></li>
+                                <li><a href="#">Lễ Hội</a></li>
+                                <li><a href="#">Làng Nghề Cổ Truyền</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mua Sắm</a></li>
+                        <li><a href="#">Giải Trí</a></li>
+                        <li><a href="#">Tour</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <!-- -------------------------------OK-------------------------- -->
+
+    <!--Img Banner-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: 100px;">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/banner1.jpg" alt="Làng Bích Họa Tam Thanh" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="images/banner2.png" alt="Toàn Cảnh Hội An" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="images/banner3.jpg" alt="Cổng Trời Đông Giang" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="images/banner4.jpg" alt="Chùa Cầu Hội An" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="images/banner5.jpg" alt="Khe Lim - Đại Lộc" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="images/banner6.jpg" alt="Con Người và Biển" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="images/banner7.png" alt="Tháp Mỹ Sơn" style="width:100%;">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- -------------------------------OK-------------------------- -->
+
+    <!--Main-->
+    <div class="body-main">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-thumbs-up"></span>
+                        Like 234</button>
+                    <button type="button" class="btn btn-primary">Share</button>
+                </div>
+                <!--Left-col-->
+                <div class="body-main-info col-md-8 col-sm-12">
+                    <h3>Du lịch Quảng Nam, du khách sẽ được khám phá nhiều điểm đến nổi tiếng. Mỗi địa danh một vẻ đẹp
+                        riêng, mang đến cho du khách những cảm xúc thú vị. Nếu bạn là người đam mê du lịch, khám phá
+                        những vùng đất mới, đừng bỏ qua vùng đất Quảng Nam.</h3>
+                    <h4>Giới thiệu du lịch Quảng Nam</h4>
+                    <p>Tỉnh Quảng Nam nằm ở vị trí <q>Khúc ruột miền Trung</q> của cả nước, nơi đây tổng hòa của những
+                        yếu tố địa lý là núi, đồng bằng và biển. Quảng Nam có diện tích tự nhiên khoảng 10.406 km2, giáp
+                        ranh Đà Nẵng và Quảng Ngãi.Là vùng đất sở hữu nhiều danh thắng cổ kính mang vẻ đẹp của tạo hóa,
+                        được thiên nhiên ban tặng hệ thống cảnh quan tuyệt đẹp, Quảng Nam đã và đang đẩy mạnh phát triển
+                        du lịch. Hiện nay, Quảng Nam luôn nằm top đầu những tỉnh thành có lượng khách ghé thăm cao nhất
+                        cả nước.Du lịch Quảng Nam có gì? Đến Quảng Nam, du khách sẽ được khám phá nhiều điểm đến tuyệt
+                        đẹp như: phố cổ Hội An - Đô thị cổ nhất Đông Nam Á, biển Cửa Đại, thánh địa Mỹ Sơn, Cù Lao Chàm,
+                        cảnh đẹp Núi Thành Quảng Nam, các khu làng nghề nổi tiếng,... Mỗi địa điểm sở hữu một nét đẹp
+                        riêng, mang đến cho du khách những trải nghiệm độc đáo.</p>
+                    <div class="body-main-img">
+                        <img onclick="show(this)" src="images/gt1.jpg" alt="Giới Thiệu Du Lịch Quảng Nam">
+                    </div>
+                    <h4>Thời điểm đẹp nhất để đi du lịch Quảng Nam tự túc</h4>
+                    <p>Theo <em>review Du lịch Quảng Nam</em>, thời tiết nơi đây mùa nào cũng đẹp, mỗi thời điểm sẽ mang
+                        đến những nét đẹp riêng. Tuy nhiên, thời điểm lý tưởng nhất để khám phá xứ Quảng vẫn là từ
+                        <strong>tháng 2 đến tháng 8</strong>. Cụ thể, thời tiết Quảng Nam vào mỗi thời gian trong năm
+                        như sau:
+                    </p>
+                    <ul>
+                        <li><strong>Mùa mưa:</strong> Kéo dài từ tháng 9 đến tháng 12, thời điểm này miền Trung nói
+                            chung và Quảng Nam hay chịu ảnh hưởng của mưa bão và áp thấp, ít nhiều sẽ ảnh hưởng đến kế
+                            hoạch du lịch của bạn.</li>
+                        <li><strong>Mùa khô:</strong> Từ tháng 2 đến tháng 8, thời tiết Quảng Nam nắng ráo. Theo kinh
+                            nghiệm du lịch Quảng Nam, thời điểm này rất thuận lợi để tham quan và khám phá các địa điểm
+                            du lịch nổi tiếng nơi đây. </li>
+                    </ul>
+                    <div class="body-main-img">
+                        <img onclick="show(this)" src="images/gt2.jpeg" alt="Thiên Nhiên Quảng Nam">
+                    </div>
+                    <h4>Phương tiện di chuyển khi đi du lịch Quảng Nam</h4>
+                    <h5>Cách di chuyển đến Quảng Nam</h5>
+                    <p>Du lịch Quảng Nam, tùy theo điều kiện kinh tế, nơi xuất phát cũng như lịch trình du lịch của mình
+                        mà bạn có thể lựa chọn các phương tiện sao cho cho phù hợp.Ngày nay hệ thống kết nối giao thông
+                        giữa các tỉnh thành trên cả nước đã được đồng bộ và phát triển mạnh mẽ. Muốn di chuyển đến Quảng
+                        Nam, du khách có thể lựa chọn máy bay, tàu hoả hay xe khách đều thuận tiện.</p>
+                    <ul>
+                        <li><strong>Máy bay:</strong> Muốn rút ngắn thời gian di chuyển, du khách nên chọn di chuyển
+                            bằng máy bay. Tuỳ thuộc lịch trình, bạn có thể chọn đáp xuống sân bay Đà Nẵng hoặc sân bay
+                            Chu Lai.</li>
+                        <li><strong>Tàu hỏa:</strong> Để tiết kiệm chi phí và linh động giờ khởi hành, du khách có thể
+                            lựa chọn tàu hoả. Tàu Bắc - Nam đều có chuyến tới Tam Kỳ (Quảng Nam) với nhiều khung giờ
+                            khác nhau. </li>
+                        <li><strong>Xe khách:</strong> Bạn có thể dễ dàng bắt xe khách đường dài Bắc - Nam rồi xuống xe
+                            tại Quảng Nam. Hình thức di chuyển bằng xe khách tuy lâu nhưng cực tiết kiệm.</li>
+                    </ul>
+                    <div class="body-main-img">
+                        <img onclick="show(this)" src="images/gt3.jpg" alt="Phương Tiện di chuyển">
+                    </div>
+                    <h5>Phương tiện di chuyển trong Quảng Nam</h5>
+                    <p>Muốn khám phá trọn vẹn mọi điểm đến nổi tiếng ở xứ Quảng, du khách nên chọn phương tiện di chuyển
+                        phù hợp. Một số phương thức di chuyển trong các tỉnh Quảng Nam du khách có thể lựa chọn như:</p>
+                    <ul>
+                        <li>Tham quan Phố cổ bạn có thể lựa chọn di chuyển bằng xe đạp hoặc xích lô.</li>
+                        <li>Di chuyển trong thành phố Quảng Nam và các điểm du lịch, các bạn có thể chọn xe máy, taxi
+                            hoặc xe bus đi Hội An.</li>
+                        <li>Để di chuyển đến Cù lao Chàm, làng mộc Kim Bồng, rừng dừa bảy Mẫu,... du khách di chuyển
+                            đường thủy bằng thuyền hoặc tàu.</li>
+                    </ul>
+                    <h2>CHÚC BẠN CÓ CHUYẾN ĐI VUI VẺ</h2>
+                </div>
+
+                <!--Right-Col-->
+                <div class="col-md-4 col-sm-12 body-main-sticky">
+                    <div class="body-main-moreinfo" style="margin-bottom: 5px;">
+                        <h4>Bài Viết Dành Cho Bạn</h4>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top51.jpg" alt="Du Lịch Quảng Nam" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 điểm đến du lịch Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 01/05/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top52.jpg" alt="Mì Quảng" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 món ăn đặc sản Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 16/02/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top53.jpg" alt="Lễ Hội Bà Thu Bồn" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 Lễ Hội nổi bật ở Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 09/07/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top54.jpg" alt="Đèn Lồng" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 Làng nghề Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 16/09/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                        <div class="row tr-e">
+                            <div class="col-xs-4">
+                                <img src="images/top55.jpg" alt="Giải Trí - Vinpearl Land Hội An" width="100%">
+                            </div>
+                            <div class="col-xs-8">
+                                <p>Top 5 Khu vui chơi Quảng Nam</p>
+                                <span class="glyphicon glyphicon-calendar"> 02/07/2021</span>
+                                <span style="margin-left: 15px;" class="glyphicon glyphicon-thumbs-up"> 12345</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-main-moreinfo">
+                        <h3 style="color:red; font-weight: bold;text-align: center;">LIÊN HỆ QUẢNG CÁO</h3>
+                        <div style="text-align: center;"><a href="#" class="btn btn-info btn-lg">
+                                <span class="glyphicon glyphicon-phone-alt"></span> 0909357579
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="showBoard" style="display: none;">
+            <div id="maskContainer" onclick="hide()"></div>
+            <div id="showContainer">
+                <img class="imageShow" src="images/banner1.jpg" alt="">
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="footer">
+            <div class="container">
+                <img src="images/logo.jpg" alt="Logo">
+                <h3>Liên hệ</h3>
+                <p>Name: Phạm Thích</p>
+                <p>Email:thichpfx13302@funix.edu.vn</p>
+            </div>
+        </div>
+
+        <script src="trangchu.js"></script>
+</body>
+
+</html>
